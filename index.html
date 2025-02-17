@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thejesh R - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar Menu -->
+    <div class="sidebar">
+        <a href="#home"><i class="fas fa-home"></i> <span</span></a>
+        <a href="#about"><i class="fas fa-user"></i> <span></span></a>
+        <a href="#contact"><i class="fas fa-envelope"></i> <span></span></a>
+    </div>
+
+    <!-- Home Page -->
+    <section id="home" class="page">
+        <div class="content">
+            <h1>Thejesh R</h1>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/thejesh_online?igsh=bjllcnVqdzl6c281"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/thejesh-r-2362462a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+<!-- About Me Page -->
+<section id="about" class="page">
+    <div class="content">
+        <div class="about-container">
+            <img src="C:\Users\6796m\OneDrive\Pictures\3O7A6214~3.JPG" alt="Thejesh R" class="profile-photo">
+            <div class="bio">
+                <h2>About Me</h2>
+                <p>Hi, I’m Thejesh R, a passionate web developer and cybersecurity enthusiast with a background in computer applications. Currently in my final semester of BCA at BGS Institute of Management, I have a strong foundation in Python, web development, and data science. With experience as the head coordinator of the Entrepreneurship Development Committee and a member of NSS, I enjoy taking on challenges that blend creativity and technology.
+
+                    Beyond coding, I’m also dedicated to fitness and bodybuilding, and I enjoy playing the guitar as a hobby. I’m always eager to learn, build innovative projects, and explore the latest trends in technology and security.</p>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <h2 class="skills-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript, React</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h3>Data Science</h3>
+                <p>Python, Pandas, NumPy, Machine Learning</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Cybersecurity</h3>
+                <p>Ethical Hacking, Network Security</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-server"></i>
+                <h3>Backend Development</h3>
+                <p>Node.js, Express, MongoDB</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Contact Page -->
+    <section id="contact" class="page">
+        <div class="content">
+            <h2>Contact Me</h2>
+            <div class="contact-icons">
+                <a href="#"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fas fa-phone"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <script >document.addEventListener('DOMContentLoaded', function () {
+        const sidebar = document.querySelector('.sidebar');
+    
+        document.addEventListener('mousemove', function (e) {
+            if (e.clientX < 20) {
+                sidebar.style.width = '250px';
+            } else {
+                sidebar.style.width = '60px';
+            }
+        });
+    
+        // Create floating boxes
+        const numBoxes = 20; // Number of floating boxes
+        for (let i = 0; i < numBoxes; i++) {
+            let box = document.createElement('div');
+            box.classList.add('floating-box');
+    
+            // Randomize position and animation duration
+            box.style.left = Math.random() * window.innerWidth + "px";
+            box.style.top = Math.random() * window.innerHeight + "px";
+            box.style.animationDuration = (Math.random() * 5 + 3) + "s"; // Between 3-8 seconds
+    
+            document.body.appendChild(box);
+        }
+    });</script>
+</body>
+</html>
