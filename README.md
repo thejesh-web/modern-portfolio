@@ -1,1 +1,1 @@
-live demo: file:///D:/thejesh-web/Modern-Portfolio/index.html
+Live Demo: https://thejesh-web.github.io/modern-portfolio/
